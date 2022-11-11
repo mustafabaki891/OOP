@@ -56,12 +56,12 @@ struct yer {
 	int degisken;
 };
 
-int main() {
-	yer konum;
-	int a = 100;
-	konum->degisken = &a;
+// int main() {
+// 	yer konum;
+// 	int a = 100;
+// 	konum->degisken = &a;
 
-	cout << konum->degisken << endl;
+// 	cout << konum->degisken << endl;
 
-	return 0;
-}
+// 	return 0;
+// }

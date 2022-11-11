@@ -1,25 +1,38 @@
 #include<iostream>
 using namespace std;
 
-class nokta {
+class oda {
+    private:
+        int en, boy, yukseklik;
+        int alan, hacim;
     public:
-    int x,y;
+        void alanhesap(int a, int b){
+            if(a<=0)
+                cout << "Hatali Giris." << endl;
+            else {
+                en = a;
+                boy = b;
+                alan = en*boy;
+            }
+        }
 
-    void arttir(int a, int b){
-        x = a+5;
-        y = b+5;
-    }
+        void hacimhesap(int a, int b, int c){
+            en = a;
+            boy = b;
+            yukseklik = c;
+            hacim = en*boy*yukseklik;
+        }
 
-    void goster(){
-        cout << x << ',' << y << endl;
-    }
+        void goster(){
+            cout << " Alan: " << alan << " Hacim: " << hacim <<endl;
+        }
+
 };
 
 int main(){
-    nokta n1;
-    n1.x = 5;
-    n1.y = 7;
-    n1.arttir(n1.x,n1.y);
-    n1.goster();
+    oda oda1;
+    oda1.alanhesap(-5,4);
+    oda1.hacimhesap(5,-4,2);
+    oda1.goster();
     return 0;
 }
