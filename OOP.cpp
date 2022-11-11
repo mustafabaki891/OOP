@@ -6,5 +6,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+    int input;
+	for (int input = 1; input <= 99; input++) {
+		cout << "\n" << input;
+	}
 }
