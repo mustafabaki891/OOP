@@ -31,8 +31,8 @@ class oda {
 
 int main(){
     oda oda1;
-    oda1.alanhesap(-5,4);
-    oda1.hacimhesap(5,-4,2);
+    oda1.alanhesap(5,4);
+    oda1.hacimhesap(5,4,2);
     oda1.goster();
     return 0;
 }
